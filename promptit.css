@@ -1,0 +1,164 @@
+.ppt-layer {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 9999999;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+  .ppt-layer.visible {
+    background-color: rgba(0, 0, 0, 0.35); }
+  .ppt-layer .ppt-container {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 15px;
+    background-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%); }
+    .ppt-layer .ppt-container.visible {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0); }
+    .ppt-layer .ppt-container .ppt-box {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      position: relative;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      .ppt-layer .ppt-container .ppt-box:after {
+        display: block;
+        content: "";
+        font-size: 0;
+        zoom: 1;
+        clear: both; }
+      .ppt-layer .ppt-container .ppt-box .ppt-message {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        background-color: transparent;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box; }
+      .ppt-layer .ppt-container .ppt-box .ppt-placeholder {
+        display: inline-block;
+        background-color: transparent;
+        font-family: inherit;
+        font-size: 10px;
+        font-weight: bold;
+        color: inherit;
+        text-transform: uppercase;
+        position: absolute;
+        top: auto;
+        left: 15px;
+        bottom: 85px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box; }
+      .ppt-layer .ppt-container .ppt-box .ppt-input {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 15px 15px 10px;
+        background-color: transparent;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+        border: 0;
+        border-bottom: 1px solid #eeeeee;
+        outline: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box; }
+      .ppt-layer .ppt-container .ppt-box .ppt-btns {
+        display: block;
+        float: right;
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box; }
+        .ppt-layer .ppt-container .ppt-box .ppt-btns:after {
+          display: block;
+          content: "";
+          font-size: 0;
+          zoom: 1;
+          clear: both; }
+        .ppt-layer .ppt-container .ppt-box .ppt-btns .ppt-btn {
+          display: block;
+          float: left;
+          margin: 0;
+          padding: 15px;
+          font-family: inherit;
+          font-size: inherit;
+          font-weight: inherit;
+          color: inherit;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          box-sizing: border-box; }
+          .ppt-layer .ppt-container .ppt-box .ppt-btns .ppt-btn.btn-separator {
+            padding: 15px 0; }
+          .ppt-layer .ppt-container .ppt-box .ppt-btns .ppt-btn.btn-allow, .ppt-layer .ppt-container .ppt-box .ppt-btns .ppt-btn.btn-disallow {
+            cursor: pointer; }
+
+/*# sourceMappingURL=promptit.css.map */

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prompt it</title>
+	<link rel="stylesheet" type="text/css" href="promptit.css">
+</head>
+<body>
+
+<a href="#" id="button">Prompt it</a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- <script src="./promptit.jquery.js"></script> -->
+<script src="./promptit.js"></script>
+<script>
+	var button = document.getElementById('button');
+
+	button.addEventListener('click',function(e) {
+		e.preventDefault();
+
+		promptit({
+			'message' : 'Lorem ipsum dolor sit amet:',
+			'placeholder' : '',
+			'allow' : 'Proceed',
+			'disallow' : 'Cancel'
+		}, function(e) {
+			console.log(e);
+		});
+	});
+</script>
+
+</body>
+</html>
